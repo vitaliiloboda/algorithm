@@ -57,7 +57,7 @@ for i in d:
         f.append(list(numbers.keys())[j])
     e.append(f)
 
-result = deque(['0']) * (n + 1)
+result = deque(['0']) * len(e[0])
 
 for i in e:
     result = plus(result, i)
