@@ -57,6 +57,10 @@ for i in d:
         f.append(list(numbers.keys())[j])
     e.append(f)
 
-result = plus(e[0], e[1])
+result = deque(['0']) * (n + 1)
+
+for i in e:
+    result = plus(result, i)
+
 
 print(f'Произведение чисел {a} и {b} равно {result}')
