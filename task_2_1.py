@@ -51,7 +51,7 @@ def plus(a, b):
         d.append(list(numbers.keys())[i])
 
     if d[0] == '0':
-        l1 = d.popleft()
+        d.popleft()
 
     return d
 
