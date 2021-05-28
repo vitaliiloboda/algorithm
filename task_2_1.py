@@ -43,6 +43,10 @@ def plus(a, b):
             c[i + 1] = 1
         else:
             c[i] += k
+            if c[i] > 15:
+                k = c[i] - 16
+                c[i] = k
+                c[i + 1] = 1
 
     c.reverse()
 
