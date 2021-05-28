@@ -26,10 +26,10 @@ def plus(a, b):
     for i in range(n):
 
         if i > len(a) - 1:
-            c[i] = numbers.get(b[i])
+            c[i] += numbers.get(b[i])
             break
         elif i > len(b) - 1:
-            c[i] = numbers.get(a[i])
+            c[i] += numbers.get(a[i])
             break
 
         k = numbers.get(a[i]) + numbers.get(b[i])
